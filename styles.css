@@ -1,0 +1,47 @@
+/* Material Symbols */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+}
+
+/* Luxury shadow utility */
+.luxury-shadow {
+  box-shadow: 0 20px 40px -15px rgba(141, 119, 95, 0.05);
+}
+
+/* Glassmorphism nav */
+.glass-nav {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* Gallery hover effects */
+.gallery-item:hover .gallery-overlay { opacity: 1; }
+.gallery-item:hover img { transform: scale(1.03); }
+
+/* Scroll-reveal for services page */
+.reveal-service {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal-service.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Contact form input focus */
+.form-input-focus:focus {
+  border-bottom-color: #775a19 !important;
+  outline: none;
+}
+
+/* Scroll-reveal for homepage sections */
+.animate-reveal {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #fff8f5; }
+::-webkit-scrollbar-thumb { background: #d1c5b4; }

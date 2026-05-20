@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html class="light" lang="es">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Servicios | ÉLÉVATION LUXURY WELLNESS</title>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "on-surface-variant": "#4e4639",
+          "outline-variant": "#d1c5b4",
+          "surface-variant": "#e9e1dc",
+          "secondary-container": "#e5e2dd",
+          "outline": "#7f7667",
+          "primary": "#775a19",
+          "surface-container-low": "#fbf2ed",
+          "inverse-primary": "#e9c176",
+          "surface-bright": "#fff8f5",
+          "surface-container-high": "#efe6e2",
+          "background": "#fff8f5",
+          "primary-fixed-dim": "#e9c176",
+          "primary-container": "#c5a059",
+          "on-secondary-container": "#656461",
+          "surface-dim": "#e1d8d4",
+          "on-secondary": "#ffffff",
+          "surface-container-highest": "#e9e1dc",
+          "secondary": "#5f5e5b",
+          "tertiary": "#6f5b44",
+          "on-tertiary": "#ffffff",
+          "on-primary": "#ffffff",
+          "surface-container": "#f5ece7",
+          "surface": "#fff8f5",
+          "on-surface": "#1e1b18",
+          "inverse-surface": "#34302c",
+          "tertiary-container": "#baa187",
+          "on-background": "#1e1b18",
+        },
+        borderRadius: {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        spacing: {
+          "gutter": "32px",
+          "unit": "8px",
+          "container-max": "1200px",
+          "section-padding-desktop": "120px",
+          "section-padding-mobile": "64px"
+        },
+        fontFamily: {
+          "headline-md": ["Playfair Display"],
+          "label-caps": ["Hanken Grotesk"],
+          "body-md": ["Hanken Grotesk"],
+          "display-lg-mobile": ["Playfair Display"],
+          "headline-sm": ["Playfair Display"],
+          "body-lg": ["Hanken Grotesk"],
+          "display-lg": ["Playfair Display"]
+        },
+        fontSize: {
+          "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "400"}],
+          "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.15em", "fontWeight": "600"}],
+          "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+          "display-lg-mobile": ["36px", {"lineHeight": "1.2", "fontWeight": "400"}],
+          "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "400"}],
+          "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0.01em", "fontWeight": "400"}],
+          "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "400"}]
+        }
+      }
+    }
+  }
+</script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-background text-on-surface font-body-md overflow-x-hidden">
+
+<!-- TopNavBar -->
+<nav class="fixed top-0 left-0 right-0 z-50 bg-surface/80 backdrop-blur-md">
+  <div class="flex justify-between items-center w-full px-gutter py-unit max-w-container-max mx-auto h-20">
+    <div class="font-headline-sm text-headline-sm tracking-widest text-on-surface">ÉLÉVATION</div>
+    <div class="hidden md:flex items-center space-x-12">
+      <a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300" href="index.html">Inicio</a>
+      <a class="font-label-caps text-label-caps text-primary border-b border-primary pb-1" href="servicios.html">Servicios</a>
+      <a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300" href="galeria.html">Galería</a>
+      <a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300" href="contacto.html">Contacto</a>
+    </div>
+    <a href="https://wa.me/525560000000?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20cita%20en%20%C3%89L%C3%89VATION" target="_blank" rel="noopener" class="px-8 py-3 border border-primary text-primary font-label-caps text-label-caps hover:bg-primary-container hover:text-on-primary-container transition-all duration-300 active:scale-[0.99]">
+      RESERVAR
+    </a>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="pt-40 pb-section-padding-desktop px-gutter max-w-container-max mx-auto text-center">
+  <span class="font-label-caps text-label-caps text-primary mb-6 block tracking-[0.3em]">NUESTRA CARTA</span>
+  <h1 class="font-display-lg text-display-lg mb-8 max-w-3xl mx-auto italic">Experiencias de bienestar diseñadas para el alma.</h1>
+  <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Sumérjase en un refugio de serenidad donde cada detalle ha sido curado para elevar su esencia y restaurar su equilibrio natural.</p>
+</header>
+
+<!-- Floating action buttons: WhatsApp, Facebook, Teléfono -->
+<div class="fixed bottom-10 right-10 z-40 hidden md:flex flex-col gap-3 items-center">
+  <a href="https://wa.me/525560000000?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20cita%20en%20%C3%89L%C3%89VATION" target="_blank" rel="noopener" aria-label="WhatsApp"
+     class="flex items-center justify-center w-14 h-14 bg-[#25D366] text-white rounded-full shadow-xl hover:scale-110 hover:shadow-2xl transition-all duration-300">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+  <a href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"
+     class="flex items-center justify-center w-14 h-14 bg-[#1877F2] text-white rounded-full shadow-xl hover:scale-110 hover:shadow-2xl transition-all duration-300">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+      <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+    </svg>
+  </a>
+  <a href="tel:+525512345678" aria-label="Llamar"
+     class="flex items-center justify-center w-14 h-14 bg-primary text-white rounded-full shadow-xl hover:scale-110 hover:shadow-2xl transition-all duration-300">
+    <span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">call</span>
+  </a>
+</div>
+
+<!-- Category Filter -->
+<section class="sticky top-20 z-30 bg-background/95 backdrop-blur-sm border-b border-outline-variant/20 py-6 mb-12">
+  <div class="max-w-container-max mx-auto px-gutter flex justify-center space-x-8 overflow-x-auto whitespace-nowrap">
+    <button class="font-label-caps text-label-caps text-primary border-b border-primary pb-2 svc-filter active" data-cat="all">TODOS</button>
+    <button class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary pb-2 transition-colors svc-filter" data-cat="estilismo">ESTILISMO</button>
+    <button class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary pb-2 transition-colors svc-filter" data-cat="facial">CUIDADO FACIAL</button>
+    <button class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary pb-2 transition-colors svc-filter" data-cat="manicura">MANICURA &amp; PEDICURA</button>
+    <button class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary pb-2 transition-colors svc-filter" data-cat="corporal">TRATAMIENTOS CORPORALES</button>
+  </div>
+</section>
+
+<!-- Services Grid -->
+<main class="max-w-container-max mx-auto px-gutter pb-section-padding-desktop space-y-32">
+
+  <!-- Estilismo -->
+  <div class="reveal-service grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start" data-cat="estilismo">
+    <div class="lg:col-span-5 aspect-[4/5] bg-surface-container-low overflow-hidden">
+      <img class="w-full h-full object-cover grayscale-[20%] hover:scale-105 transition-transform duration-700" alt="Sesión de estilismo profesional" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtCbHdx218fOE_gwy_VSR0DBSLpwYd441oq72dgFhTlNGduht755TlP4Vb5vkjiuX20Ko7VHbkzG19jMeUo4DbnyPf3Zt4jiY6I04dsOwFzJvSzgDd7JG78J2wiuujqfFY8TwLTiDNEdGiZ-ijclhJp_g-p7h_vllK-pUZNIt7lyebl8Stfy9oGlTjM8fbgUz8oxcMAxvmVlVjyBDY7KLL6bfs1oVU4muTIwz3ezqEKZ0xoVZkEnx6U7SeXNn2V8sRrHt1ufajq_4">
+    </div>
+    <div class="lg:col-span-7 lg:pl-12 pt-8 lg:pt-0">
+      <span class="font-label-caps text-label-caps text-primary tracking-widest">CATEGORÍA</span>
+      <h2 class="font-headline-md text-headline-md mb-12 mt-2">Estilismo</h2>
+      <div class="space-y-12">
+        <div class="group cursor-pointer">
+          <div class="flex justify-between items-baseline border-b border-outline-variant/30 pb-4 mb-3">
+            <h3 class="font-body-lg text-body-lg group-hover:text-primary transition-colors">Corte Couture &amp; Styling</h3>
+            <span class="font-body-md text-on-surface-variant">$1,500 MXN</span>
+          </div>
+          <div class="flex justify-between">
+            <p class="font-body-md text-on-surface-variant italic max-w-md">Diseño personalizado de corte adaptado a la morfología facial y asesoría de imagen.</p>
+            <span class="font-label-caps text-[10px] text-outline pt-1">60 MIN</span>
+          </div>
+        </div>
+        <div class="group cursor-pointer">
+          <div class="flex justify-between items-baseline border-b border-outline-variant/30 pb-4 mb-3">
+            <h3 class="font-body-lg text-body-lg group-hover:text-primary transition-colors">Balayage Signature ÉLÉVATION</h3>
+            <span class="font-body-md text-on-surface-variant">Desde $3,200 MXN</span>
+          </div>
+          <div class="flex justify-between">
+            <p class="font-body-md text-on-surface-variant italic max-w-md">Técnica de aclarado a mano alzada para crear dimensiones naturales y luminosas.</p>
+            <span class="font-label-caps text-[10px] text-outline pt-1">180 MIN</span>
+          </div>
+        </div>
+        <div class="group cursor-pointer">
+          <div class="flex justify-between items-baseline border-b border-outline-variant/30 pb-4 mb-3">
+            <h3 class="font-body-lg text-body-lg group-hover:text-primary transition-colors">Tratamiento de Keratina Orgánica</h3>
+            <span class="font-body-md text-on-surface-variant">$4,200 MXN</span>
+          </div>
+          <div class="flex justify-between">
+            <p class="font-body-md text-on-surface-variant italic max-w-md">Reconstrucción profunda y sellado de cutícula para un brillo espejo y control absoluto.</p>
+            <span class="font-label-caps text-[10px] text-outline pt-1">150 MIN</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cuidado Facial -->
+  <div class="reveal-service grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start" data-cat="facial">
+    <div class="lg:col-span-7 lg:pr-12 pt-8 lg:pt-0 order-2 lg:order-1">
+      <span class="font-label-caps text-label-caps text-primary tracking-widest">CATEGORÍA</span>
+      <h2 class="font-headline-md text-headline-md mb-12 mt-2 text-right">Cuidado Facial</h2>
+      <div class="space-y-12">
+        <div class="group cursor-pointer">
+          <div class="flex justify-between items-baseline border-b border-outline-variant/30 pb-4 mb-3">
+            <h3 class="font-body-lg text-body-lg group-hover:text-primary transition-colors">Limpieza Profunda Oxigenante</h3>
+            <span class="font-body-md text-on-surface-variant">$1,900 MXN</span>
+          </div>
+          <div class="flex justify-between">
+            <p class="font-body-md text-on-surface-variant italic max-w-md">Protocolo detoxificante que elimina impurezas y restaura la vitalidad celular inmediata.</p>
+            <span class="font-label-caps text-[10px] text-outline pt-1">75 MIN</span>
+          </div>
+        </div>
+        <div class="group cursor-pointer">
+          <div class="flex justify-between items-baseline border-b border-outline-variant/30 pb-4 mb-3">
+            <h3 class="font-body-lg text-body-lg group-hover:text-primary transition-colors">Ritual Oro 24K Lifting</h3>
+            <span class="font-body-md text-on-surface-variant">$2,900 MXN</span>
+          </div>
+          <div class="flex justify-between">
+            <p class="font-body-md text-on-surface-variant italic max-w-md">Tratamiento reafirmante con partículas de oro que aporta una luminosidad sublime.</p>
+            <span class="font-label-caps text-[10px] text-outline pt-1">90 MIN</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="lg:col-span-5 aspect-[4/5] bg-surface-container-low overflow-hidden order-1 lg:order-2">
+      <img class="w-full h-full object-cover grayscale-[20%] hover:scale-105 transition-transform duration-700" alt="Tratamiento facial de lujo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDHOI_4H1tGzBNikiEwvZBn24vpKmW7DbjB5QZV9XIhI1tehAu5ZW78MqYw-8f94bvEcRMlYC9RnY8Hfr54K7pJUD7s9GVY89s_EHyskLHzD05f1pxzG3KagEdYm_FBktpffcoJGXXaemn5lWuyd4E6CAJcCn9gvuc7gP1ZoTwWqUBiH7Qn0kSRTGBgjTzrLZ3xDV-XLyiAAGRfo8zs1i6JioyA11NjLgHsM9hZAJVZZZmnmvBGLRTkIXxxU1WBl6j84VDVdWUtTI">
+    </div>
+  </div>
+
+  <!-- Manicura & Pedicura -->
+  <div class="reveal-service grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start" data-cat="manicura">
+    <div class="lg:col-span-5 aspect-[4/5] bg-surface-container-low overflow-hidden">
+      <img class="w-full h-full object-cover grayscale-[20%] hover:scale-105 transition-transform duration-700" alt="Manicura spa de lujo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsr-ghb_Kn9wQbaQlvafRm2PyzYX7APeGLr49ORSSGEdhve-xjZKsprBTuhtIMVINvlH3pghy7_KthayqxQscsTo18A9oqgNPdGsM15ZpYye5hr6OYiKiHZMyNxGWILj7YemCOzW1RKs0gX9zQm8jZieyk6Ui4w2JXLoIhoLcRfVdnnOniwrLNpwof57y--dnCs51sLT336ElppWvtv3JHckwYiNeced8llL0FPvrqZpow3bCDlTDIsatqowAjr8M0XuxmUSLri64">
+    </div>
+    <div class="lg:col-span-7 lg:pl-12 pt-8 lg:pt-0">
+      <span class="font-label-caps text-label-caps text-primary tracking-widest">CATEGORÍA</span>
+      <h2 class="font-headline-md text-headline-md mb-12 mt-2">Manicura &amp; Pedicura</h2>
+      <div class="space-y-12">
+        <div class="group cursor-pointer">
+          <div class="flex justify-between items-baseline border-b border-outline-variant/30 pb-4 mb-3">
+            <h3 class="font-body-lg text-body-lg group-hover:text-primary transition-colors">Manicura Spa ÉLÉVATION</h3>
+            <span class="font-body-md text-on-surface-variant">$900 MXN</span>
+          </div>
+          <div class="flex justify-between">
+            <p class="font-body-md text-on-surface-variant italic max-w-md">Exfoliación con sales marinas, hidratación profunda y esmaltado de larga duración.</p>
+            <span class="font-label-caps text-[10px] text-outline pt-1">50 MIN</span>
+          </div>
+        </div>
+        <div class="group cursor-pointer">
+          <div class="flex justify-between items-baseline border-b border-outline-variant/30 pb-4 mb-3">
+            <h3 class="font-body-lg text-body-lg group-hover:text-primary transition-colors">Pedicura Luxury Silk</h3>
+            <span class="font-body-md text-on-surface-variant">$1,300 MXN</span>
+          </div>
+          <div class="flex justify-between">
+            <p class="font-body-md text-on-surface-variant italic max-w-md">Ritual revitalizante para pies cansados con baño de aceites esenciales y masaje térmico.</p>
+            <span class="font-label-caps text-[10px] text-outline pt-1">70 MIN</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tratamientos Corporales -->
+  <div class="reveal-service grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start" data-cat="corporal">
+    <div class="lg:col-span-7 lg:pr-12 pt-8 lg:pt-0 order-2 lg:order-1">
+      <span class="font-label-caps text-label-caps text-primary tracking-widest">CATEGORÍA</span>
+      <h2 class="font-headline-md text-headline-md mb-12 mt-2 text-right">Tratamientos Corporales</h2>
+      <div class="space-y-12">
+        <div class="group cursor-pointer">
+          <div class="flex justify-between items-baseline border-b border-outline-variant/30 pb-4 mb-3">
+            <h3 class="font-body-lg text-body-lg group-hover:text-primary transition-colors">Masaje Relajante de Tejido Profundo</h3>
+            <span class="font-body-md text-on-surface-variant">$2,200 MXN</span>
+          </div>
+          <div class="flex justify-between">
+            <p class="font-body-md text-on-surface-variant italic max-w-md">Terapia muscular intensa diseñada para liberar tensiones acumuladas y restaurar la movilidad.</p>
+            <span class="font-label-caps text-[10px] text-outline pt-1">80 MIN</span>
+          </div>
+        </div>
+        <div class="group cursor-pointer">
+          <div class="flex justify-between items-baseline border-b border-outline-variant/30 pb-4 mb-3">
+            <h3 class="font-body-lg text-body-lg group-hover:text-primary transition-colors">Exfoliación de Café &amp; Chocolate</h3>
+            <span class="font-body-md text-on-surface-variant">$2,600 MXN</span>
+          </div>
+          <div class="flex justify-between">
+            <p class="font-body-md text-on-surface-variant italic max-w-md">Ritual sensorial que drena y reafirma mientras envuelve el cuerpo en aromas reparadores.</p>
+            <span class="font-label-caps text-[10px] text-outline pt-1">90 MIN</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="lg:col-span-5 aspect-[4/5] bg-surface-container-low overflow-hidden order-1 lg:order-2">
+      <img class="w-full h-full object-cover grayscale-[20%] hover:scale-105 transition-transform duration-700" alt="Tratamiento corporal de lujo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMDg4SRk-03KvCUqXVEhPKwDHu9bvyx8zP-BEH5oKQ-JcseKD716Wn3nv8F-yXxLRMzi1DaEmSWvK1Mbb3179WG_tflpPZNWNY080ezP3_PB4FK_8P01Sji3azfTwdEgT975PHKC99moxtTkmjuwwPyVxulIJGJTBHnvU_UL02w6FoBfnX71-Q16T4PjfROLWm7kJsMn0crDl8QlWFZMkEcvFkaMQXCvCG5wCx-Jn6VJ5kiqTubNKbxj9CboQySL3wvMTlnxCeNHY">
+    </div>
+  </div>
+
+</main>
+
+<!-- Footer -->
+<footer class="bg-surface-container-low border-t border-outline-variant/30">
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter px-gutter py-section-padding-desktop max-w-container-max mx-auto">
+    <div>
+      <div class="font-headline-sm text-headline-sm text-on-surface mb-8">ÉLÉVATION</div>
+      <p class="font-body-md text-on-surface-variant max-w-xs italic">El santuario donde la belleza y el bienestar se encuentran en perfecto equilibrio.</p>
+    </div>
+    <div class="grid grid-cols-2 gap-8">
+      <div class="flex flex-col space-y-4">
+        <span class="font-label-caps text-label-caps text-primary mb-2">EXPLORAR</span>
+        <a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="servicios.html">Servicios</a>
+        <a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Soporte</a>
+        <a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Soporte</a>
+      </div>
+      <div class="flex flex-col space-y-4">
+        <span class="font-label-caps text-label-caps text-primary mb-2">LEGAL</span>
+        <a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Privacidad</a>
+        <a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Términos</a>
+      </div>
+    </div>
+    <div class="flex flex-col items-start md:items-end">
+      <span class="font-label-caps text-label-caps text-primary mb-6">CONTACTO</span>
+      <p class="font-body-md text-on-surface-variant mb-2">Presidente Masaryk 123, Polanco, CDMX</p>
+      <p class="font-body-md text-on-surface-variant mb-2">+52 55 1234 5678</p>
+      <p class="font-body-md text-on-surface-variant">hola@elevation.com</p>
+    </div>
+  </div>
+  <div class="px-gutter py-8 border-t border-outline-variant/20 max-w-container-max mx-auto text-center md:text-left">
+    <p class="font-label-caps text-[10px] text-outline">© 2026 ÉLÉVATION LUXURY WELLNESS. TODOS LOS DERECHOS RESERVADOS.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add('active');
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.reveal-service').forEach(el => observer.observe(el));
+
+  document.querySelectorAll('.group[class*="cursor-pointer"]').forEach(item => {
+    item.addEventListener('mouseenter', () => {
+      item.style.transform = 'translateX(8px)';
+      item.style.transition = 'transform 0.3s ease';
+    });
+    item.addEventListener('mouseleave', () => {
+      item.style.transform = 'translateX(0)';
+    });
+  });
+
+  document.querySelectorAll('.svc-filter').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const cat = btn.dataset.cat;
+      document.querySelectorAll('.svc-filter').forEach(b => {
+        b.classList.remove('active', 'text-primary', 'border-b', 'border-primary');
+        b.classList.add('text-on-surface-variant');
+      });
+      btn.classList.add('active', 'text-primary', 'border-b', 'border-primary');
+      btn.classList.remove('text-on-surface-variant');
+      document.querySelectorAll('[data-cat]').forEach(block => {
+        if (!block.classList.contains('svc-filter')) {
+          block.style.display = (cat === 'all' || block.dataset.cat === cat) ? '' : 'none';
+        }
+      });
+    });
+  });
+</script>
+</body>
+</html>

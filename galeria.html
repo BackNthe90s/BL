@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html class="light" lang="es">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Galería | ÉLÉVATION LUXURY WELLNESS</title>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "on-surface-variant": "#4e4639",
+          "outline-variant": "#d1c5b4",
+          "surface-variant": "#e9e1dc",
+          "outline": "#7f7667",
+          "primary": "#775a19",
+          "surface-container-low": "#fbf2ed",
+          "surface-bright": "#fff8f5",
+          "background": "#fff8f5",
+          "primary-container": "#c5a059",
+          "on-primary-container": "#4e3700",
+          "on-secondary": "#ffffff",
+          "secondary": "#5f5e5b",
+          "on-primary": "#ffffff",
+          "surface-container": "#f5ece7",
+          "surface": "#fff8f5",
+          "on-surface": "#1e1b18",
+          "on-background": "#1e1b18",
+        },
+        borderRadius: {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        spacing: {
+          "gutter": "32px",
+          "unit": "8px",
+          "container-max": "1200px",
+          "section-padding-desktop": "120px",
+          "section-padding-mobile": "64px"
+        },
+        fontFamily: {
+          "headline-md": ["Playfair Display"],
+          "label-caps": ["Hanken Grotesk"],
+          "body-md": ["Hanken Grotesk"],
+          "display-lg-mobile": ["Playfair Display"],
+          "headline-sm": ["Playfair Display"],
+          "body-lg": ["Hanken Grotesk"],
+          "display-lg": ["Playfair Display"]
+        },
+        fontSize: {
+          "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "400"}],
+          "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.15em", "fontWeight": "600"}],
+          "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+          "display-lg-mobile": ["36px", {"lineHeight": "1.2", "fontWeight": "400"}],
+          "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "400"}],
+          "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0.01em", "fontWeight": "400"}],
+          "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "400"}]
+        }
+      }
+    }
+  }
+</script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-background text-on-background antialiased overflow-x-hidden">
+
+<!-- TopNavBar -->
+<nav class="fixed top-0 left-0 right-0 z-50 bg-surface/80 glass-nav">
+  <div class="flex justify-between items-center w-full px-gutter py-unit max-w-container-max mx-auto z-50">
+    <div class="font-headline-sm text-headline-sm tracking-widest text-on-surface uppercase">ÉLÉVATION</div>
+    <div class="hidden md:flex items-center gap-8">
+      <a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300" href="index.html">Inicio</a>
+      <a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300" href="servicios.html">Servicios</a>
+      <a class="font-label-caps text-label-caps text-primary border-b border-primary pb-1" href="galeria.html">Galería</a>
+      <a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300" href="contacto.html">Contacto</a>
+    </div>
+    <a href="https://wa.me/525560000000?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20cita%20en%20%C3%89L%C3%89VATION" target="_blank" rel="noopener" class="font-label-caps text-label-caps px-6 py-2 border border-primary text-primary hover:bg-primary-container hover:text-on-primary-container transition-all duration-300 uppercase tracking-widest">
+      Reservar
+    </a>
+  </div>
+</nav>
+
+<!-- Main Content Canvas -->
+<main class="pt-[100px]">
+  <!-- Hero Title -->
+  <header class="max-w-container-max mx-auto px-gutter text-center py-section-padding-mobile md:pt-section-padding-desktop md:pb-16">
+    <span class="font-label-caps text-label-caps text-primary tracking-[0.3em] uppercase block mb-4">Portafolio Editorial</span>
+    <h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-6">El Arte de la Transformación</h1>
+    <p class="font-body-lg text-body-lg text-secondary max-w-2xl mx-auto opacity-80">Una curaduría visual de nuestros rituales de bienestar más exclusivos y resultados excepcionales en medicina estética y alta peluquería.</p>
+  </header>
+
+  <!-- Asymmetric Bento Gallery -->
+  <section class="max-w-container-max mx-auto px-gutter pb-section-padding-desktop">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-6 md:auto-rows-[300px]">
+      <!-- Item 1: Large Featured -->
+      <div class="md:col-span-8 md:row-span-2 group relative overflow-hidden gallery-item">
+        <img alt="Interior del salón ÉLÉVATION" class="w-full h-full object-cover transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoh5kV-QepqR2ieQRODZBiMn6fcMOzag5t3v-QcBpOo99ELRF6AwIIFRfggklTbVz08aVuAItRtuFDuFG3PixHi0i0Hv3ivCUkL4cOpapyIwoC6ErYhi6r4uPE66jEn7tFgv2mQRVP_5g3DDvfsF_rErf1lFxysGWJ_61-pF3mVq3t5gIXQ0mb4lXt6iJ_mQ_AhhnmU6SVtkXEMrhtG0c5QPT8_R8kF7e5f_dKl3tRkTspOnHNJHRcAKYJMRYP6dFpgfuSZeYfGN0">
+        <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 gallery-overlay flex flex-col justify-end p-10">
+          <span class="font-label-caps text-label-caps text-white mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">Espacios</span>
+          <h3 class="font-headline-md text-headline-md text-white translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-75">Santuario Principal</h3>
+        </div>
+      </div>
+      <!-- Item 2: Vertical Skin -->
+      <div class="md:col-span-4 md:row-span-2 group relative overflow-hidden gallery-item">
+        <img alt="Tratamiento facial de oro 24K" class="w-full h-full object-cover transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-HRFoKsmvdFJ6NbxyA9BtdY3RvowaBLL-Ukk7fkBmeX_cjkoTnBRWed-KpANeDwZDuOT22C7_63kGl1O05_pVPqgssQy6kIh_vUzE_PdZtQXoDPdMy1X6L6KGlr2lqqRpdq2kz2xT_3vcXwf2mDqvSdVkHCoHZaCrBFk9xDfiNF8OZ11q4kQTfv2Fo1GE48LbFyl6NhyDySXcN157x8wdUEVCstsNKz2Se6FRh_YYyKax2ugN94nG18VlFPcvAhcj-TmX-7rH-9E">
+        <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 gallery-overlay flex flex-col justify-end p-10">
+          <span class="font-label-caps text-label-caps text-white mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">Tratamientos</span>
+          <h3 class="font-headline-md text-headline-md text-white translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-75">Ritual de Oro 24K</h3>
+        </div>
+      </div>
+      <!-- Item 3: Wide Hair -->
+      <div class="md:col-span-4 md:row-span-1 group relative overflow-hidden gallery-item">
+        <img alt="Escultura capilar" class="w-full h-full object-cover transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1yNwctVXrEDb3piDf9AI9qvIVkw8mm3n1_ivOtrCfo645AxQTjHYmFPeyX14wb4YdGaE5YtlESoJl9KfK0HFH7mJ-lbowi0OizA0EkoOH1E463Zg0POq-F6Yc6nMhFcGbWBgwoxqrWjUdRBvr4_vswxUT1mQfE7ivSYhx_bEwLtM1aRaS-iz8cxsVYHEiulT9fLawiX78LYtjMOmhICmI5DEALVEW8r_8QedLbbAMrYbtWP3QUbjRydHpK-4YR0avMaHAD6i130o">
+        <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 gallery-overlay flex flex-col justify-end p-6">
+          <span class="font-label-caps text-label-caps text-white mb-2">Peluquería</span>
+          <h3 class="font-headline-sm text-headline-sm text-white">Escultura Capilar</h3>
+        </div>
+      </div>
+      <!-- Item 4: Detail -->
+      <div class="md:col-span-4 md:row-span-1 group relative overflow-hidden gallery-item">
+        <img alt="Zona de reposo del spa" class="w-full h-full object-cover transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvEkutaoygcCWsfSwmXhXKaxjfQRmlS5zSSM7hdUrWCjOf6NmOFKQ4-b82zuiuhJC274gZvp8i-auA-Yj0ulkXR76rQQDVuLFiI1IZI1r6HdFox6eBTqFHJIQKiTJ5RE3ww1xjO6OfKAI7IvkGRBqszClonlElgtPFpH3fXQmDJh2qvr4BDfJoRauyqX084Lk1bPWb2X-bpACjANQpYaQBMHWwJV6C3EiMwl21-5S2aOjdWTWl5vdrb2LTq7Axs_vgA38BuHZf5C8">
+        <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 gallery-overlay flex flex-col justify-end p-6">
+          <span class="font-label-caps text-label-caps text-white mb-2">Bienestar</span>
+          <h3 class="font-headline-sm text-headline-sm text-white">Zona de Reposo</h3>
+        </div>
+      </div>
+      <!-- Item 5: Portrait -->
+      <div class="md:col-span-4 md:row-span-1 group relative overflow-hidden gallery-item">
+        <img alt="Maquillaje editorial" class="w-full h-full object-cover transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCegPn3mDkByCxoxvA9hFV3zLlpR4N6CPsW2I30zdoWW0cg7K5Gdoi7361SjurqDKEYE_conOwXSVRztCa1SxoQbK39MEisY9V_UrGcYprMm0zTbROeTsFIpgri0Qdk2xH1zY5KCtdvspfWfTSXqMxwAT1sX7BNlNufiegBtIlddySEQ3qVqU8a6xsDub8DnNkPl-og7QaWREpjxA6X9eQ8luX4nPfeYcN4-yhKI_nBNUnYShu8GOvsLIREQ-MyrnpDseFJtyJJVqc">
+        <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 gallery-overlay flex flex-col justify-end p-6">
+          <span class="font-label-caps text-label-caps text-white mb-2">Estética</span>
+          <h3 class="font-headline-sm text-headline-sm text-white">Maquillaje Editorial</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="bg-surface-container-low py-section-padding-desktop">
+    <div class="max-w-container-max mx-auto px-gutter text-center">
+      <h2 class="font-headline-md text-headline-md text-on-surface mb-8">¿Listo para su transformación?</h2>
+      <div class="flex flex-col md:flex-row justify-center gap-6">
+        <a href="contacto.html" class="px-12 py-4 border border-primary text-primary font-label-caps text-label-caps uppercase tracking-widest hover:bg-primary hover:text-white transition-all duration-500">Agendar Cita</a>
+        <a href="servicios.html" class="px-12 py-4 text-on-surface-variant font-label-caps text-label-caps uppercase tracking-widest flex items-center justify-center gap-2 group">
+          Consultar Servicios
+          <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Booking Widget -->
+<div class="fixed bottom-8 right-8 z-40 hidden md:block">
+  <button class="flex items-center gap-4 bg-surface/40 backdrop-blur-xl border border-white/20 p-2 pr-6 luxury-shadow rounded-full group">
+    <div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white">
+      <span class="material-symbols-outlined">calendar_month</span>
+    </div>
+    <span class="font-label-caps text-label-caps text-on-surface uppercase">Reserva Online</span>
+  </button>
+</div>
+
+<!-- Footer -->
+<footer class="bg-surface-container-low border-t border-outline-variant/30">
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter px-gutter py-section-padding-desktop max-w-container-max mx-auto">
+    <div class="space-y-6">
+      <div class="font-headline-sm text-headline-sm text-on-surface uppercase tracking-widest">ÉLÉVATION</div>
+      <p class="font-body-md text-body-md text-on-surface-variant opacity-70">Elevando los estándares del bienestar de lujo a través de la precisión clínica y la indulgencia sensorial.</p>
+    </div>
+    <div class="flex flex-col gap-4">
+      <span class="font-label-caps text-label-caps text-primary uppercase mb-2">Explorar</span>
+      <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="servicios.html">Tratamientos Faciales</a>
+      <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="servicios.html">Diseño de Imagen</a>
+      <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="servicios.html">Rituales Corporales</a>
+    </div>
+    <div class="flex flex-col gap-4">
+      <span class="font-label-caps text-label-caps text-primary uppercase mb-2">Contacto</span>
+      <p class="font-body-md text-body-md text-on-surface-variant">Presidente Masaryk 123, Polanco, CDMX</p>
+      <p class="font-body-md text-body-md text-on-surface-variant">+52 55 1234 5678</p>
+    </div>
+  </div>
+  <div class="max-w-container-max mx-auto px-gutter py-8 border-t border-outline-variant/10 flex flex-col md:flex-row justify-between items-center gap-4">
+    <p class="font-label-caps text-[10px] text-on-surface-variant opacity-60">© 2026 ÉLÉVATION LUXURY WELLNESS. TODOS LOS DERECHOS RESERVADOS.</p>
+    <div class="flex gap-6">
+      <a class="font-label-caps text-[10px] text-on-surface-variant hover:text-primary transition-colors uppercase" href="#">Privacidad</a>
+      <a class="font-label-caps text-[10px] text-on-surface-variant hover:text-primary transition-colors uppercase" href="#">Términos</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating action buttons: WhatsApp, Facebook, Teléfono -->
+<div class="fixed bottom-10 right-10 z-40 hidden md:flex flex-col gap-3 items-center">
+  <a href="https://wa.me/525560000000?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20cita%20en%20%C3%89L%C3%89VATION" target="_blank" rel="noopener" aria-label="WhatsApp"
+     class="flex items-center justify-center w-14 h-14 bg-[#25D366] text-white rounded-full shadow-xl hover:scale-110 hover:shadow-2xl transition-all duration-300">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+  <a href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"
+     class="flex items-center justify-center w-14 h-14 bg-[#1877F2] text-white rounded-full shadow-xl hover:scale-110 hover:shadow-2xl transition-all duration-300">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+      <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+    </svg>
+  </a>
+  <a href="tel:+525512345678" aria-label="Llamar"
+     class="flex items-center justify-center w-14 h-14 bg-primary text-white rounded-full shadow-xl hover:scale-110 hover:shadow-2xl transition-all duration-300">
+    <span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">call</span>
+  </a>
+</div>
+
+<script src="script.js"></script>
+<script>
+  document.querySelectorAll('.gallery-item').forEach(item => {
+    item.addEventListener('mousemove', (e) => {
+      const img = item.querySelector('img');
+      const rect = item.getBoundingClientRect();
+      const x = (e.clientX - rect.left) / rect.width;
+      const y = (e.clientY - rect.top) / rect.height;
+      img.style.transformOrigin = `${x * 100}% ${y * 100}%`;
+    });
+  });
+</script>
+</body>
+</html>

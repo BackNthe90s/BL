@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="es">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>ÉLÉVATION | Luxury Wellness</title>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "on-surface-variant": "#4e4639",
+          "outline-variant": "#d1c5b4",
+          "surface-variant": "#e9e1dc",
+          "secondary-container": "#e5e2dd",
+          "outline": "#7f7667",
+          "on-primary-container": "#4e3700",
+          "surface-tint": "#775a19",
+          "primary-fixed": "#ffdea5",
+          "primary": "#775a19",
+          "surface-container-low": "#fbf2ed",
+          "inverse-primary": "#e9c176",
+          "surface-bright": "#fff8f5",
+          "surface-container-high": "#efe6e2",
+          "background": "#fff8f5",
+          "inverse-on-surface": "#f8efea",
+          "primary-fixed-dim": "#e9c176",
+          "primary-container": "#c5a059",
+          "on-secondary-container": "#656461",
+          "surface-dim": "#e1d8d4",
+          "on-secondary": "#ffffff",
+          "surface-container-highest": "#e9e1dc",
+          "secondary": "#5f5e5b",
+          "tertiary": "#6f5b44",
+          "on-tertiary": "#ffffff",
+          "on-primary": "#ffffff",
+          "surface-container": "#f5ece7",
+          "surface": "#fff8f5",
+          "on-surface": "#1e1b18",
+          "inverse-surface": "#34302c",
+          "tertiary-container": "#baa187",
+          "on-background": "#1e1b18",
+        },
+        borderRadius: {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        spacing: {
+          "gutter": "32px",
+          "unit": "8px",
+          "container-max": "1200px",
+          "section-padding-desktop": "120px",
+          "section-padding-mobile": "64px"
+        },
+        fontFamily: {
+          "headline-md": ["Playfair Display"],
+          "label-caps": ["Hanken Grotesk"],
+          "body-md": ["Hanken Grotesk"],
+          "display-lg-mobile": ["Playfair Display"],
+          "headline-sm": ["Playfair Display"],
+          "body-lg": ["Hanken Grotesk"],
+          "display-lg": ["Playfair Display"]
+        },
+        fontSize: {
+          "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "400"}],
+          "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.15em", "fontWeight": "600"}],
+          "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+          "display-lg-mobile": ["36px", {"lineHeight": "1.2", "fontWeight": "400"}],
+          "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "400"}],
+          "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0.01em", "fontWeight": "400"}],
+          "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "400"}]
+        }
+      }
+    }
+  }
+</script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
+
+<!-- TopNavBar -->
+<nav class="fixed top-0 left-0 right-0 bg-surface/80 backdrop-blur-md z-50 border-b border-outline-variant/10">
+  <div class="flex justify-between items-center w-full px-gutter py-unit max-w-container-max mx-auto h-20">
+    <div class="flex-1 hidden md:flex gap-8">
+      <a class="font-label-caps text-label-caps text-primary border-b border-primary pb-1" href="index.html">Inicio</a>
+      <a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300" href="servicios.html">Servicios</a>
+    </div>
+    <div class="flex-1 flex justify-center">
+      <span class="font-headline-sm text-headline-sm tracking-widest text-on-surface">ÉLÉVATION</span>
+    </div>
+    <div class="flex-1 flex justify-end items-center gap-8">
+      <div class="hidden md:flex gap-8 mr-8">
+        <a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300" href="galeria.html">Galería</a>
+        <a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300" href="contacto.html">Contacto</a>
+      </div>
+      <a href="https://wa.me/525560000000?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20cita%20en%20%C3%89L%C3%89VATION" target="_blank" rel="noopener" class="border border-primary px-6 py-2 font-label-caps text-label-caps text-primary hover:bg-primary-container/10 transition-all duration-300 active:scale-[0.99]">
+        Reservar
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="relative h-screen flex items-center justify-center overflow-hidden">
+  <div class="absolute inset-0 z-0 scale-110 transition-transform duration-[10s] ease-out" id="hero-image">
+    <img class="w-full h-full object-cover" alt="Interior de spa de lujo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzmn0DpXhfZg9WeEy2CJYRMSbyVvfq92CAmSrICT903M3P3Spj6fBHO6Ur-eTb5lVCVZFffvpB-q3IDWQORFBCbOEuaXLD6R8sO8ig-zKlXiVNqtw6dbGtIPvQEVXb-_KMia7Z7NRBoVSRGhlhYIDElpKNEFcdQXeWbe4DVca4wAqo7g2RNg5nULsm-CYdvnxsJezzaf3dYIfNncISJB5TS2qeIrtZK5eiW3Q47HqTiZkPDamkbH2DAx5s64XfKwhtWE_z2hGi5uA">
+    <div class="absolute inset-0 bg-surface/20"></div>
+  </div>
+  <div class="relative z-10 text-center px-gutter max-w-4xl opacity-0 translate-y-8 transition-all duration-1000 ease-out" id="hero-content">
+    <span class="font-label-caps text-label-caps text-primary mb-6 block tracking-[0.3em]">LUXURY WELLNESS</span>
+    <h1 class="font-display-lg text-display-lg md:text-[72px] text-on-surface mb-8">Tu refugio de serenidad</h1>
+    <p class="font-body-lg text-body-lg text-on-surface-variant mb-12 max-w-2xl mx-auto">
+      Experimente la máxima expresión de la belleza personalizada en un entorno diseñado para el descanso y la renovación total de los sentidos.
+    </p>
+    <div class="flex flex-col md:flex-row gap-6 justify-center">
+      <a href="contacto.html" class="bg-primary text-on-primary px-10 py-4 font-label-caps text-label-caps tracking-widest hover:bg-primary/90 transition-all duration-300">
+        RESERVAR CITA
+      </a>
+      <a href="servicios.html" class="border border-primary text-primary px-10 py-4 font-label-caps text-label-caps tracking-widest hover:bg-primary/5 transition-all duration-300">
+        VER SERVICIOS
+      </a>
+    </div>
+  </div>
+  <div class="absolute bottom-12 left-1/2 -translate-x-1/2 animate-bounce opacity-50">
+    <span class="material-symbols-outlined text-primary text-3xl">keyboard_double_arrow_down</span>
+  </div>
+</header>
+
+<!-- About Us Section -->
+<section class="py-section-padding-desktop bg-surface-container-lowest overflow-hidden">
+  <div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
+    <div class="relative group">
+      <div class="aspect-[4/5] overflow-hidden">
+        <img class="w-full h-full object-cover grayscale-[20%] group-hover:scale-105 transition-transform duration-700" alt="Esteticista realizando tratamiento facial" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAN2rdXh8q87eIV98cIHSEaqsGumSSuT___sa84-iyuznGCYOJ0QsZjoFpFRsUsIpBNW7kyrXA2MGm7zw3i4FFG2Wph-AlVpW0UtCH0JZXRqwArhCbSf_OicCqAB_oKnk0JjRHjTLPtliQzFWzQpbG4uH4KGjjsgP6oeYTopbGxV_v4yxJ7mzQ8D-Rr81e-Q8frk33EiV4BD6ud0-xWZXn9zIxw6dKHcM4wjJFdxIbCYK-I1RXu2GfxToKo4nFtZn6jUYjb0IqB6S0">
+      </div>
+      <div class="absolute -bottom-8 -right-8 w-64 h-64 bg-surface-variant -z-10"></div>
+    </div>
+    <div class="flex flex-col gap-8">
+      <span class="font-label-caps text-label-caps text-outline tracking-[0.4em]">FILOSOFÍA</span>
+      <h2 class="font-headline-md text-headline-md text-on-surface">Belleza Holística y Precisión Clínica</h2>
+      <div class="w-20 h-[1px] bg-primary"></div>
+      <p class="font-body-md text-body-md text-on-surface-variant">
+        En ÉLÉVATION, creemos que la belleza no es solo superficial; es una extensión de su bienestar interior. Nuestro enfoque combina técnicas ancestrales con la tecnología más avanzada para ofrecer resultados excepcionales.
+      </p>
+      <p class="font-body-md text-body-md text-on-surface-variant">
+        Cada tratamiento es una coreografía de cuidado, diseñada específicamente para su piel y espíritu, utilizando únicamente productos de grado premium en un ambiente de silencio absoluto.
+      </p>
+      <a class="group flex items-center gap-4 font-label-caps text-label-caps text-primary mt-4" href="servicios.html">
+        NUESTRA HISTORIA
+        <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_forward</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Featured Services (Bento Grid) -->
+<section class="py-section-padding-desktop bg-surface">
+  <div class="max-w-container-max mx-auto px-gutter">
+    <div class="text-center mb-20">
+      <span class="font-label-caps text-label-caps text-primary tracking-[0.4em] block mb-4">DESCUBRA</span>
+      <h2 class="font-headline-md text-headline-md text-on-surface">Servicios Destacados</h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+      <!-- Hair (Large) -->
+      <div class="md:col-span-8 group relative overflow-hidden aspect-video md:aspect-auto h-[400px]">
+        <img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" alt="Cabello de lujo en salón" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBudJW2u45eIUNDd68X8itbq5AZNmIqIXgwpv2jJ7aN1ZLsFvW2O_ER37PJ1iENBhdBcoAsLsskZuhIkynupKtuxRyg5eFLT4s9wkIbYtyJrWqiBe3phGqlTKian1KysUqPoD2AnSl5UtL9RyVqfE0KXyGZEmqtPlzkTx02kYVUvMEq_guu7cuDyR-FcztKH9PiAQQt6pUiO8RAqcOu_Uoh6Rw_Rja2cX0-hHqY5sExV0gKaj1QfW_qv0CGBoGRNt9UKg6tiJSMVkE">
+        <div class="absolute inset-0 bg-gradient-to-t from-on-surface/60 to-transparent flex flex-col justify-end p-12 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+          <span class="font-label-caps text-label-caps text-surface-bright mb-2">PELUQUERÍA DE AUTOR</span>
+          <h3 class="font-headline-sm text-headline-sm text-surface-bright mb-4">Corte &amp; Color</h3>
+          <p class="text-surface-bright/80 max-w-sm mb-6 opacity-0 group-hover:opacity-100 transition-opacity duration-700">Técnicas de vanguardia para una melena radiante y saludable.</p>
+          <a href="servicios.html" class="w-fit text-surface-bright font-label-caps text-label-caps border-b border-surface-bright/30 pb-1">EXPLORAR</a>
+        </div>
+      </div>
+      <!-- Skincare -->
+      <div class="md:col-span-4 group relative overflow-hidden h-[400px]">
+        <img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" alt="Productos skincare de lujo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTZHGn_YApBM2C4zXXXbbegxcaQ-X8UCFBNHIlO8cz_7H4R7GLFQZ0Re0HppTIGechI7B4pd_RnWm-FD0cSfg8RE9GZdBxlRxkgRTtbX6LWsDTVmToXzUME2ugUmhm_r6RKNYhk3A9H0oigisaKr5tfcbYRuW49nuX0s6rbg5zJ0HE4AEQ7NpZfjjSHqwOgqflGOYgBpAKAW3RKf9njDs7coW59wLG69fbP-MWoBumEDie62vRVtyUbafUDnj1EWWdmsSxmNIFT-U">
+        <div class="absolute inset-0 bg-on-surface/40 flex flex-col justify-end p-8 backdrop-blur-[2px] group-hover:backdrop-blur-0 transition-all">
+          <span class="font-label-caps text-label-caps text-surface-bright mb-2">TRATAMIENTOS FACIALES</span>
+          <h3 class="font-headline-sm text-headline-sm text-surface-bright">Skincare</h3>
+        </div>
+      </div>
+      <!-- Nails -->
+      <div class="md:col-span-4 group relative overflow-hidden h-[400px]">
+        <img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" alt="Manicura de lujo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfQWztuKYmmlouiS2z8T1q1DRuYFHdLiImudS6jGkWc_Cj2YmLe6NQs9D72JP7EosAOlqjOZWEE6EyzPnkWPtF_vUs-g81S4QCW7B9XqC2XUIu0DpvJ013t4HNUlrNOif3JXVm0DtfenJumD2PuKCNTNALbjLt7y4YmHjPjVoqfzcuEoQWw9RZZo9EwLVsZHjnb9ZuTx9BQ7KMHBNuDp7NsPIwEhSIiuksRgovpJYYOxQRmf5MriZWalz_eR3sllOygrtQhco-oBM">
+        <div class="absolute inset-0 bg-surface-variant/20 flex flex-col justify-end p-8">
+          <div class="bg-surface/90 p-8 transform translate-y-12 group-hover:translate-y-0 transition-transform duration-500">
+            <span class="font-label-caps text-label-caps text-primary mb-2">SPA DE MANOS</span>
+            <h3 class="font-headline-sm text-headline-sm text-on-surface">Manicura &amp; Pedicura</h3>
+          </div>
+        </div>
+      </div>
+      <!-- Wellness -->
+      <div class="md:col-span-8 group relative overflow-hidden h-[400px]">
+        <img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" alt="Sala de masajes de lujo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbr0NnazLLcqaBzwetwH2j-H0msLjHTCWZwzEoc4dVNJ8lUzMLqqVYnbrwtLH4dquY8NqbAlDcWj8eQhuqEx9JDlKiz1Cttsbj9HsKF5g9vHtFlXP4VeRrMEjjMw3BtQDpjvfOUfjDvu_h70B5KuCJ_KWQIZN_hr5gjMpG77aUjk8ieNaMn5q_0SRvuBIUInPNn1FVzEbf9SLnEiTevTjV_oOF9zHwi6VD2oXyffP8FShU95Qw9jQ9R2fkO6elvp-M7VK3u0c2RkU">
+        <div class="absolute inset-0 flex items-center justify-center p-12">
+          <div class="text-center bg-surface-bright/10 backdrop-blur-md p-16 border border-white/20">
+            <h3 class="font-display-lg text-display-lg text-surface-bright mb-4 italic">The Ritual</h3>
+            <p class="font-label-caps text-label-caps text-surface-bright tracking-[0.3em]">MASAJES &amp; TERAPIAS</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonial Section -->
+<section class="py-section-padding-desktop bg-surface-container-low">
+  <div class="max-w-4xl mx-auto px-gutter text-center">
+    <span class="material-symbols-outlined text-primary text-6xl mb-8 opacity-40">format_quote</span>
+    <div class="relative overflow-hidden" id="testimonial-slider">
+      <div class="flex transition-transform duration-700 ease-in-out" id="testimonial-track">
+        <div class="w-full flex-shrink-0 py-8 px-4">
+          <p class="font-headline-md text-headline-md text-on-surface italic mb-8">
+            "ÉLÉVATION no es solo un salón, es un santuario. Cada detalle, desde el aroma al entrar hasta la precisión de los tratamientos, está diseñado para transportarte a un estado de paz absoluta."
+          </p>
+          <div class="flex flex-col items-center">
+            <span class="font-label-caps text-label-caps text-primary tracking-[0.2em]">MARÍA GARCÍA</span>
+            <span class="text-xs text-outline-variant mt-2">Clienta desde 2021</span>
+          </div>
+        </div>
+        <div class="w-full flex-shrink-0 py-8 px-4">
+          <p class="font-headline-md text-headline-md text-on-surface italic mb-8">
+            "Cada visita renueva completamente mi ser. El equipo de ÉLÉVATION tiene un dominio excepcional de cada tratamiento, y los resultados hablan por sí solos."
+          </p>
+          <div class="flex flex-col items-center">
+            <span class="font-label-caps text-label-caps text-primary tracking-[0.2em]">SOFÍA MARTÍNEZ</span>
+            <span class="text-xs text-outline-variant mt-2">Clienta desde 2022</span>
+          </div>
+        </div>
+        <div class="w-full flex-shrink-0 py-8 px-4">
+          <p class="font-headline-md text-headline-md text-on-surface italic mb-8">
+            "La atención personalizada y los productos premium hacen que cada sesión sea un ritual único. Es el único lugar donde verdaderamente me siento en las mejores manos."
+          </p>
+          <div class="flex flex-col items-center">
+            <span class="font-label-caps text-label-caps text-primary tracking-[0.2em]">VALENTINA REYES</span>
+            <span class="text-xs text-outline-variant mt-2">Clienta desde 2020</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex justify-center gap-4 mt-12">
+      <button class="w-2 h-2 rounded-full dot-btn" data-index="0" style="background-color:#775a19"></button>
+      <button class="w-2 h-2 rounded-full dot-btn" data-index="1" style="background-color:#d1c5b4;opacity:0.5"></button>
+      <button class="w-2 h-2 rounded-full dot-btn" data-index="2" style="background-color:#d1c5b4;opacity:0.5"></button>
+    </div>
+  </div>
+</section>
+
+<!-- Floating action buttons: WhatsApp, Facebook, Teléfono -->
+<div class="fixed bottom-10 right-10 z-40 hidden md:flex flex-col gap-3 items-center">
+  <a href="https://wa.me/525560000000?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20cita%20en%20%C3%89L%C3%89VATION" target="_blank" rel="noopener" aria-label="WhatsApp"
+     class="flex items-center justify-center w-14 h-14 bg-[#25D366] text-white rounded-full shadow-xl hover:scale-110 hover:shadow-2xl transition-all duration-300">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+  <a href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"
+     class="flex items-center justify-center w-14 h-14 bg-[#1877F2] text-white rounded-full shadow-xl hover:scale-110 hover:shadow-2xl transition-all duration-300">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+      <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+    </svg>
+  </a>
+  <a href="tel:+525512345678" aria-label="Llamar"
+     class="flex items-center justify-center w-14 h-14 bg-primary text-white rounded-full shadow-xl hover:scale-110 hover:shadow-2xl transition-all duration-300">
+    <span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">call</span>
+  </a>
+</div>
+
+<!-- Footer -->
+<footer class="bg-surface-container-low border-t border-outline-variant/30">
+  <div class="max-w-container-max mx-auto px-gutter py-section-padding-desktop grid grid-cols-1 md:grid-cols-4 gap-12">
+    <div class="md:col-span-1">
+      <span class="font-headline-sm text-headline-sm text-on-surface block mb-8">ÉLÉVATION</span>
+      <p class="font-body-md text-body-md text-on-surface-variant mb-6">
+        Creando experiencias de bienestar inigualables para aquellos que valoran la exclusividad y el detalle.
+      </p>
+      <div class="flex gap-4 items-center">
+        <a href="https://wa.me/525560000000" target="_blank" rel="noopener" aria-label="WhatsApp" class="text-primary hover:opacity-70 transition-opacity">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+        </a>
+        <a href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook" class="text-primary hover:opacity-70 transition-opacity">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+          </svg>
+        </a>
+        <a href="tel:+525512345678" aria-label="Teléfono" class="text-primary hover:opacity-70 transition-opacity">
+          <span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">call</span>
+        </a>
+      </div>
+    </div>
+    <div>
+      <h4 class="font-label-caps text-label-caps text-primary mb-8 tracking-widest">NAVEGACIÓN</h4>
+      <ul class="flex flex-col gap-4 font-body-md text-body-md text-on-surface-variant">
+        <li><a class="hover:text-primary transition-colors" href="servicios.html">Tratamientos</a></li>
+        <li><a class="hover:text-primary transition-colors" href="#">Nuestro Equipo</a></li>
+        <li><a class="hover:text-primary transition-colors" href="galeria.html">Galería</a></li>
+        <li><a class="hover:text-primary transition-colors" href="#">Blog de Bienestar</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-label-caps text-label-caps text-primary mb-8 tracking-widest">INFORMACIÓN</h4>
+      <ul class="flex flex-col gap-4 font-body-md text-body-md text-on-surface-variant">
+        <li><a class="hover:text-primary transition-colors" href="#">Privacidad</a></li>
+        <li><a class="hover:text-primary transition-colors" href="#">Términos</a></li>
+        <li><a class="hover:text-primary transition-colors" href="#">Soporte</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-label-caps text-label-caps text-primary mb-8 tracking-widest">UBICACIÓN</h4>
+      <p class="font-body-md text-body-md text-on-surface-variant mb-4">
+        Presidente Masaryk 123<br>
+        Polanco, CDMX 11560
+      </p>
+      <p class="font-body-md text-body-md text-on-surface-variant">
+        L - V: 10:00 - 20:00<br>
+        S: 09:00 - 18:00
+      </p>
+    </div>
+  </div>
+  <div class="max-w-container-max mx-auto px-gutter py-8 border-t border-outline-variant/10 flex flex-col md:flex-row justify-between items-center gap-4">
+    <span class="text-[10px] font-label-caps tracking-[0.2em] text-outline">© 2026 ÉLÉVATION LUXURY WELLNESS. TODOS LOS DERECHOS RESERVADOS.</span>
+    <div class="flex gap-8">
+      <span class="text-[10px] font-label-caps tracking-[0.2em] text-outline cursor-pointer hover:text-primary transition-colors">INSTAGRAM</span>
+      <span class="text-[10px] font-label-caps tracking-[0.2em] text-outline cursor-pointer hover:text-primary transition-colors">PINTEREST</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  (function() {
+    var track = document.getElementById('testimonial-track');
+    if (!track) return;
+    var dots = document.querySelectorAll('.dot-btn');
+    var current = 0;
+    var autoplay;
+
+    function goTo(index) {
+      current = index;
+      track.style.transform = 'translateX(-' + (index * 100) + '%)';
+      dots.forEach(function(d, i) {
+        if (i === index) {
+          d.style.backgroundColor = '#775a19';
+          d.style.opacity = '1';
+        } else {
+          d.style.backgroundColor = '#d1c5b4';
+          d.style.opacity = '0.5';
+        }
+      });
+    }
+
+    dots.forEach(function(dot) {
+      dot.addEventListener('click', function() {
+        clearInterval(autoplay);
+        goTo(parseInt(dot.dataset.index));
+        startAutoplay();
+      });
+    });
+
+    function startAutoplay() {
+      autoplay = setInterval(function() { goTo((current + 1) % 3); }, 5000);
+    }
+
+    startAutoplay();
+  })();
+</script>
+</body>
+</html>
