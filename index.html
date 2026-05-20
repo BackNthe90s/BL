@@ -88,21 +88,44 @@
 
 <!-- TopNavBar -->
 <nav class="fixed top-0 left-0 right-0 bg-surface/80 backdrop-blur-md z-50 border-b border-outline-variant/10">
-  <div class="flex justify-between items-center w-full px-gutter py-unit max-w-container-max mx-auto h-20">
-    <div class="flex-1 hidden md:flex gap-8">
-      <a class="font-label-caps text-label-caps text-primary border-b border-primary pb-1" href="index.html">Inicio</a>
-      <a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300" href="servicios.html">Servicios</a>
+  <div class="relative flex justify-between items-center w-full px-4 md:px-gutter max-w-container-max mx-auto h-16 md:h-20">
+    <!-- Izquierda: hamburguesa + logo móvil | enlaces escritorio -->
+    <div class="flex items-center gap-2">
+      <button id="menu-toggle" class="md:hidden flex flex-col justify-center gap-[5px] p-1" aria-label="Abrir menú">
+        <span class="w-6 h-px bg-on-surface block transition-all duration-300 origin-center" id="ham-1"></span>
+        <span class="w-6 h-px bg-on-surface block transition-all duration-300" id="ham-2"></span>
+        <span class="w-6 h-px bg-on-surface block transition-all duration-300 origin-center" id="ham-3"></span>
+      </button>
+      <!-- Logo solo en móvil (más pequeño, no desborda) -->
+      <a href="index.html" class="md:hidden font-headline-sm text-[15px] tracking-[0.12em] text-on-surface" style="text-decoration:none">ÉLÉVATION</a>
+      <!-- Enlaces nav en escritorio -->
+      <div class="hidden md:flex gap-8">
+        <a class="font-label-caps text-label-caps text-primary border-b border-primary pb-1" href="index.html">Inicio</a>
+        <a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300" href="servicios.html">Servicios</a>
+      </div>
     </div>
-    <div class="flex-1 flex justify-center">
-      <span class="font-headline-sm text-headline-sm tracking-widest text-on-surface">ÉLÉVATION</span>
-    </div>
-    <div class="flex-1 flex justify-end items-center gap-8">
+    <!-- Logo centrado en escritorio (absoluto, no afecta el flex) -->
+    <a href="index.html" class="hidden md:block absolute left-1/2 -translate-x-1/2 font-headline-sm text-headline-sm tracking-widest text-on-surface" style="text-decoration:none">ÉLÉVATION</a>
+    <!-- Derecha: enlaces escritorio + Reservar -->
+    <div class="flex items-center gap-3 md:gap-8">
       <div class="hidden md:flex gap-8 mr-8">
         <a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300" href="galeria.html">Galería</a>
         <a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300" href="contacto.html">Contacto</a>
       </div>
-      <a href="https://wa.me/525560000000?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20cita%20en%20%C3%89L%C3%89VATION" target="_blank" rel="noopener" class="border border-primary px-6 py-2 font-label-caps text-label-caps text-primary hover:bg-primary-container/10 transition-all duration-300 active:scale-[0.99]">
+      <a href="https://wa.me/525560000000?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20cita%20en%20%C3%89L%C3%89VATION" target="_blank" rel="noopener" class="border border-primary px-3 md:px-6 py-2 font-label-caps text-[10px] md:text-label-caps text-primary hover:bg-primary-container/10 transition-all duration-300 whitespace-nowrap">
         Reservar
+      </a>
+    </div>
+  </div>
+  <!-- Menú desplegable móvil -->
+  <div id="mobile-menu" class="hidden md:hidden bg-surface/95 backdrop-blur-md border-t border-outline-variant/20">
+    <div class="px-6 py-6 flex flex-col">
+      <a class="font-label-caps text-label-caps text-primary py-4 border-b border-outline-variant/20 block" href="index.html">Inicio</a>
+      <a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary py-4 border-b border-outline-variant/20 block transition-colors" href="servicios.html">Servicios</a>
+      <a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary py-4 border-b border-outline-variant/20 block transition-colors" href="galeria.html">Galería</a>
+      <a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary py-4 block transition-colors" href="contacto.html">Contacto</a>
+      <a href="https://wa.me/525560000000?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20cita%20en%20%C3%89L%C3%89VATION" target="_blank" rel="noopener" class="mt-6 text-center border border-primary py-4 font-label-caps text-label-caps text-primary block hover:bg-primary/5 transition-all">
+        RESERVAR VÍA WHATSAPP
       </a>
     </div>
   </div>
@@ -255,7 +278,7 @@
 </section>
 
 <!-- Floating action buttons: WhatsApp, Facebook, Teléfono -->
-<div class="fixed bottom-10 right-10 z-40 hidden md:flex flex-col gap-3 items-center">
+<div class="fixed bottom-6 right-4 md:bottom-10 md:right-10 z-40 flex flex-col gap-2 md:gap-3 items-center">
   <a href="https://wa.me/525560000000?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20cita%20en%20%C3%89L%C3%89VATION" target="_blank" rel="noopener" aria-label="WhatsApp"
      class="flex items-center justify-center w-14 h-14 bg-[#25D366] text-white rounded-full shadow-xl hover:scale-110 hover:shadow-2xl transition-all duration-300">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">

@@ -45,3 +45,52 @@
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: #fff8f5; }
 ::-webkit-scrollbar-thumb { background: #d1c5b4; }
+
+/* ── Mobile responsive fixes ── */
+@media (max-width: 767px) {
+  body { overflow-x: hidden !important; }
+
+  /* Reduce horizontal padding on mobile */
+  .px-gutter {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  /* Reduce vertical section padding on mobile */
+  .py-section-padding-desktop {
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+  }
+  .pt-section-padding-desktop { padding-top: 4rem !important; }
+  .pb-section-padding-desktop { padding-bottom: 4rem !important; }
+  .pt-40 { padding-top: 5rem !important; }
+
+  /* Tighten large gaps on mobile */
+  .gap-24 { gap: 2rem !important; }
+  .gap-12 { gap: 1.5rem !important; }
+
+  /* Reduce oversized card padding */
+  .p-12 { padding: 1.5rem !important; }
+  .p-16 { padding: 1.5rem !important; }
+
+  /* Reduce hero font on very small screens */
+  .text-display-lg { font-size: 2rem !important; }
+  .md\:text-\[72px\] { font-size: 2rem !important; }
+
+  /* Clip sections that have absolutely positioned decorative elements */
+  section { overflow-x: hidden !important; }
+  header { overflow-x: hidden !important; }
+}
+
+/* Mobile menu slide animation */
+#mobile-menu {
+  transition: max-height 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+}
+#mobile-menu.open {
+  display: block !important;
+}
+
+/* Hamburger → X animation */
+.ham-open #ham-1 { transform: rotate(45deg) translateY(6px); }
+.ham-open #ham-2 { opacity: 0; }
+.ham-open #ham-3 { transform: rotate(-45deg) translateY(-6px); }
